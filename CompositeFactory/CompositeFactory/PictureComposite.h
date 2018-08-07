@@ -10,7 +10,6 @@ public:
 	void AddComponent(ShapeComponent& component);
 	void remove_component(ShapeComponent& component);
 	ShapeComponent& get_child(int index);
-	//void Operation() override;
 	//store void store(std::ostream& stream);
 	//load
 	//draw

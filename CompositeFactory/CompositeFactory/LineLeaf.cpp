@@ -30,7 +30,8 @@ int LineLeaf::get_end_y() const
 std::string LineLeaf::to_string() const
 {
 	std::ostringstream oss;
-	oss << "(Starting X: " << startX << ", Starting Y: " << startY << ", Ending X: " << endX << ", Ending Y: " << endY << ")";
+	oss << "(Starting X: " << startX << ", Starting Y: " << startY << ", Ending X: " << endX << ", Ending Y: " << 
+		endY << ")" << std::endl;
 	auto const result{ oss.str() };
 	return result;
 }

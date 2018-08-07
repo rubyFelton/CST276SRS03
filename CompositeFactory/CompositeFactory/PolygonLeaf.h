@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include "ShapeComponent.h"
+#include <sstream>
 
 class PolygonLeaf : public ShapeComponent
 {
@@ -10,6 +11,8 @@ private:
 	int centerY{0};
 	int centerToSide{0};
 public:
+	std::string to_string() const;
+	void store(std::ostream& stream) override;
 	//void Operation() override;
 	//store void store(std::ostream& stream);
 	//load
