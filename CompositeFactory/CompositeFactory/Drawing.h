@@ -10,7 +10,7 @@ private:
 public:
 
 	void Add(ShapeComponent& component);
-	void Remove(ShapeComponent& component)
+	void Remove(ShapeComponent& component);
 	using iterator = std::vector<std::reference_wrapper<ShapeComponent>>::iterator;
 	using const_iterator = std::vector<std::reference_wrapper<ShapeComponent>>::const_iterator;
 	iterator seeBegin();

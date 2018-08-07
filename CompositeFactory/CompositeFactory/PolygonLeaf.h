@@ -13,10 +13,7 @@ private:
 public:
 	std::string to_string() const;
 	void store(std::ostream& stream) override;
-	//void Operation() override;
-	//store void store(std::ostream& stream);
+
 	//load
 	//draw
-	//get for each
-	//set for each
 };

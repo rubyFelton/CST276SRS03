@@ -20,3 +20,8 @@ void DrawClient::Add(ShapeComponent& component)
 {
 	drawing_.Add(component);
 }
+
+void DrawClient::Remove(ShapeComponent& component)
+{
+	drawing_.Remove(component);
+}

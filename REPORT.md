@@ -2,7 +2,7 @@
 
 Date Validation Strategy/Template Method  
 
-Name: <Not your Pokemon Class ID>  
+Name: ruby felton 
 
 ---
 Issues:  
