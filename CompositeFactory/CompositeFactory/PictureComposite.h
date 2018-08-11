@@ -6,7 +6,8 @@ class PictureComposite : public ShapeComponent
 {
 public:
 	std::vector<std::reference_wrapper<ShapeComponent>> composite_shapes;
-
+	int typeId{ 4 };
+	int composite_id;
 	void AddComponent(ShapeComponent& component);
 	void remove_component(ShapeComponent& component);
 	ShapeComponent& get_child(int index);
@@ -16,8 +17,4 @@ public:
 	const_iterator seeEnd() const;
 	std::string to_string() const;
 	void store(std::ostream& stream) override;
-	//load
-	//draw
-	//get for each
-	//set for each
 };

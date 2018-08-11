@@ -7,14 +7,10 @@ private:
 	int centerX{ 0 };
 	int centerY{0};
 	int radious{0};
+	int typeId{ 2 };
 public:
+	CircleLeaf();
+	CircleLeaf(int type, int x, int y, int r);
 	std::string to_string() const;
 	void store(std::ostream& stream) override;
-
-	//void Operation() override;
-	//store void store(std::ostream& stream);
-	//load
-	//draw
-	//get for each
-	//set for each
 };

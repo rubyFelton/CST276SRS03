@@ -1,23 +1,24 @@
 ﻿#pragma once
-#include <vector>
-#include "ShapeComponent.h"
+#include "shapeFactory.h"
 #include "Drawing.h"
-#include <nlohmann/json.hpp>
+// #include <nlohmann/json.hpp>
+#include <string>
 
-//Factory method
-// for convenience
-using json = nlohmann::json;
+//draw client deals with all io 
+// using json = nlohmann::json;
 
 class DrawClient
 {
 private:
 	Drawing drawing_;
-	std::ostream& stream_;
+	ShapeFactory factory;
+	std::string filename_;
 public:
-	DrawClient(std::ostream& stream);
+	// DrawClient(std::ostream& stream);
 	void drawStore();
+	void drawDisplay();
 	void Add(ShapeComponent& component);
 	void Remove(ShapeComponent& component);
-	//set file
-	//open file
+	void setFile(std::string filename);
+	void load();
 };

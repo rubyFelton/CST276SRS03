@@ -10,7 +10,6 @@ void PictureComposite::AddComponent(ShapeComponent& component)
 
 void PictureComposite::remove_component(ShapeComponent& component)
 {
-	// composite_shapes.erase(std::remove(composite_shapes.begin(), composite_shapes.end(), component), composite_shapes.end());
 	composite_shapes.erase(
 		std::remove_if(
 			composite_shapes.begin(),
@@ -52,7 +51,6 @@ std::string PictureComposite::to_string() const
 		result += iter->get().to_string();
 		++iter;
 	}
-	
 	return result;
 }
 

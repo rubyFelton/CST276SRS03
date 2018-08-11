@@ -2,6 +2,20 @@
 #include "LineLeaf.h"
 #include <sstream>
 
+LineLeaf::LineLeaf()
+{
+	
+}
+
+LineLeaf::LineLeaf(int type, int x1, int y1, int x2, int y2)
+{
+	typeId = type;
+	startX = x1;
+	startY = y1;
+	endX = x2;
+	endY = y2;
+}
+
 void LineLeaf::store(std::ostream& stream)
 {
 	stream << to_string();
@@ -30,7 +44,7 @@ int LineLeaf::get_end_y() const
 std::string LineLeaf::to_string() const
 {
 	std::ostringstream oss;
-	oss << "(Starting X: " << startX << ", Starting Y: " << startY << ", Ending X: " << endX << ", Ending Y: " << 
+	oss << "(Type: " << typeId << " Starting X: " << startX << ", Starting Y: " << startY << ", Ending X: " << endX << ", Ending Y: " << 
 		endY << ")" << std::endl;
 	auto const result{ oss.str() };
 	return result;

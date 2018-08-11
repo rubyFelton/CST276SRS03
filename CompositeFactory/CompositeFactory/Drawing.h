@@ -1,6 +1,6 @@
 ﻿#pragma once
-#include <vector>
 #include "ShapeComponent.h"
+#include <vector>
 
 class Drawing
 {
